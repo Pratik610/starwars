@@ -1,13 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	background-image: url("../public/bg.jpg");
+	background-size: fill;
+	background-repeat: no-repeat;
+	font-family: "Space Grotesk", sans-serif;
+	background-color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav {
+	padding: 1.5em;
+}
+
+.char-card {
+	position: relative;
+	width: 100%;
+	margin-bottom: 3em;
+	height: 300px;
+}
+
+.card-background {
+	position: absolute;
+	width: 40%;
+	top: 0%;
+	left: 0%;
+	border-radius: 10px;
+	height: 300px;
+}
+
+.card-background img {
+	position: relative;
+	width: 250px;
+	rotate: 270deg;
+	top: 50%;
+	left: 2%;
+	translate: -20% -50%;
+	opacity: 0.5;
+}
+
+.card-info {
+	position: absolute;
+	width: 70%;
+	top: 50%;
+	border-radius: 10px;
+	left: 80%;
+	translate: -80% -50%;
+	height: 250px;
+	background-color: #152535;
+}
+.card-info .info {
+	padding: 0em;
+	color: white;
+	position: absolute;
+	top: 20%;
+	left: 23%;
+}
+
+.char-img {
+	position: absolute;
+	width: 170px;
+	height: 170px;
+	top: 50%;
+	left: 15%;
+	translate: -15% -50%;
+	z-index: 3;
+	border-radius: 5px;
+}
+
+.close-btn {
+	position: absolute;
+	right: 0px;
+}
+
+.add-char {
+	padding: 1em;
+	z-index: 5;
+	background: rgba(255, 255, 255, 0);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border-radius: 10px;
+	position: fixed;
+	bottom: 10%;
+	left: 50%;
+
+	translate: -50% 10%;
+}
+
+.add-char button {
+	background-color: rgb(89, 182, 36);
+	outline: 0px;
+	font-size: 1em;
+	border-radius: 50%;
+	height: 50px;
+	border: 0px;
+	width: 50px;
+	display: block;
+	margin: auto;
+}
+.add-char {
+	color: white;
 }
